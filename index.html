@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ChatGPT Flask App</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js') }}"
+    ></script>
+  </head>
+  <body>
+    <h1>GPT4 Flask Integration App</h1>
+    <form id="chat-form" onsubmit="handleSubmit(event)">
+      <label for="message">Enter a message:</label>
+      <input type="text" id="message" name="message" />
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
